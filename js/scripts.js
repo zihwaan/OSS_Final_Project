@@ -9,7 +9,7 @@
 let sang = "";
 
 import { get } from "../node_modules/install/install";
-import { parse } from "node-html-parser";
+import { parse } from "../node_modules/node-html-parser/esm/index";
 
 let url="https://skb.skku.edu/biotech/community/under_notice.do?mode=list&srCategoryId1=235&srSearchKey=&srSearchVal=";
 get( url,
