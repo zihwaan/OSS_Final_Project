@@ -9,9 +9,8 @@
 let sang = "";
 
 const https = require("https");
-//import * as https from 'https'; //ES 6
 const parser = require("node-html-parser");
-//import * as parser from 'node-html-parser'; //ES 6
+
 let url="https://skb.skku.edu/biotech/community/under_notice.do?mode=list&srCategoryId1=235&srSearchKey=&srSearchVal=";
 https.get( url,
     {headers: {
