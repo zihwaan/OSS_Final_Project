@@ -30,5 +30,16 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    // Profile
+    let finish_button=document.querySelector("#finishbt");
+    finish_button.addEventListener("click",()=>{
+        let profile_input=document.querySelectorAll("#FirstName, #LastName, #Address, #Introduce");
+        let experience_input=document.querySelectorAll("#");
+        let education_input=document.querySelectorAll("#");
+        let skills_input=document.querySelectorAll("");
+        let interests_input=document.querySelectorAll("");
+        let awards_input=document.querySelectorAll("");
+    })
 
+    
 });
