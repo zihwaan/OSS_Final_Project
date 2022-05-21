@@ -8,10 +8,12 @@
 
 let sang = "";
 
-import { get } from "https";
-import { parse } from "node-html-parser";
+//const https = require("https");
+import * as https from 'https'; //ES 6
+//const parser = require("node-html-parser");
+import * as parser from 'node-html-parser'; //ES 6
 let url="https://skb.skku.edu/biotech/community/under_notice.do?mode=list&srCategoryId1=235&srSearchKey=&srSearchVal=";
-get( url,
+https.get( url,
     {headers: {
         "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36",
@@ -24,7 +26,7 @@ get( url,
     });
     res.on("end", () =>{
         console.log("\n\n 여기는 생공대~ \n\n");
-        let root = parse(data);
+        let root = parser.parse(data);
         //console.log(root);
         root.querySelectorAll(".board-list-content-title").forEach((menu) =>{
             if (menu.getElementsByTagName("a").text!=null&&menu.getElementsByTagName("a").text!="undefined"){
@@ -44,7 +46,7 @@ get( url,
 
 
 url="https://sme.skku.edu/iesys/notice.do?mode=list&srCategoryId1=1216&srSearchKey=&srSearchVal=";
-get( url,
+https.get( url,
     {headers: {
         "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36",
@@ -57,7 +59,7 @@ get( url,
     });
     res.on("end", () =>{
         console.log("\n\n 여기부터 시경~ \n\n");console.log("sang : "+ sang);
-        let root = parse(data);
+        let root = parser.parse(data);
         //console.log(root);
         root.querySelectorAll(".board-list-content-title").forEach((menu) =>{
             if (menu.getElementsByTagName("a").text!=null&&menu.getElementsByTagName("a").text!="undefined"){
@@ -83,7 +85,7 @@ get( url,
 });
 
 url="https://ice.skku.edu/ice/community/notice.do?mode=list&srCategoryId1=815&srSearchKey=&srSearchVal=";
-get( url,
+https.get( url,
     {headers: {
         "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36",
@@ -96,7 +98,7 @@ get( url,
     });
     res.on("end", () =>{
         console.log("\n\n 여기부터 전전~ \n\n");
-        let root = parse(data);
+        let root = parser.parse(data);
         //console.log(root);
         root.querySelectorAll(".board-list-content-title").forEach((menu) =>{
             if (menu.getElementsByTagName("a").text!=null&&menu.getElementsByTagName("a").text!="undefined"){
@@ -122,7 +124,7 @@ get( url,
 });
 
 url="https://globalbiz.skku.edu/gba/board/notice.do?mode=list&srCategoryId1=266&srSearchKey=&srSearchVal=";
-get( url,
+https.get( url,
     {headers: {
         "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36",
@@ -135,7 +137,7 @@ get( url,
     });
     res.on("end", () =>{
         console.log("\n\n 여기부터 글로별경영~ \n\n");
-        let root = parse(data);
+        let root = parser.parse(data);
         //console.log(root);
         root.querySelectorAll(".board-list-content-title").forEach((menu) =>{
             if (menu.getElementsByTagName("a").text!=null&&menu.getElementsByTagName("a").text!="undefined"){
