@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "https": "^1.0.0",
+    "install": "^0.13.0",
     "node-html-parser": "^5.3.3"
   },
   "devDependencies": {},
