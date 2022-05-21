@@ -20,7 +20,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block">
+                    <p> </p>
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" alt="Input IMG here" /><!--src="assets/img/profile.jpg"--> 
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -39,15 +42,25 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Clarence
-                        <span class="text-primary">Taylor</span>
+                    <h1 class="mb-0 ">
+                        <div class="mt-0 mb-5">Profile</div>
+                        <div class="d-flex ">    
+                          <div class="Name mb-3">      
+                            <input type="text" class="form-control" id="Last Name" placeholder="Last Name">
+                          </div>
+                        <span class="text-primary"><div class="Name mx-3 mb-3">
+                            <input type="text" class="form-control" id="First Name" placeholder="First Name">
+                          </div></span>
+                        </div>
                     </h1>
-                    <div class="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                        <a href="mailto:name@email.com">name@email.com</a>
+                    <div class="subheading mb-5 w-50">
+                        <input type="text" class="form-control" id="Address" placeholder="(Address, Tel, Email, ETC...)">
+                        <a href="xxxxx@email.com"> </a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5">
+                        <label for="Introduce" class="form-label">Introduce Yourself!</label>
+                        <textarea class="form-control" id="Introduce" rows="3"></textarea>
+                    </p>
                     <div class="social-icons">
                         <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
@@ -61,37 +74,105 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Experience 1</span>
+                                    <input type="text" class="form-control" placeholder="Show Your Experience (eg. SKKU AMBASSADOR)" aria-label="EXperience1" aria-describedby="Experience-title">
+                                    <span class="input-group-text" id="basic-addon1">TimeLine 1</span>
+                                    <input type="text" class="form-control" placeholder="Input TimeLine (eg. February 20xx - Present )" aria-label="Timeline1" aria-describedby="Experience-Timeline">
+                                </div>
+                                </h3>
+                                <div class="subheading mb-3">
+                                    <div class="input-group ">
+                                    <span class="input-group-text" id="basic-addon1">Subheading 1</span>
+                                    <input type="text" class="form-control" placeholder="Subtitle (eg. Introduce SKKU around the country)" aria-label="Subheading1" aria-describedby="Experience-Subheading">
+                                    </div>
+                                </div>
+                            <p>
+                                <label for="ExplainExperience" class="form-label">Explain your experience!</label>
+                                <textarea class="form-control" id="ExplainExperience" rows="3"></textarea>
+                            <p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><!-- 날짜 적는 곳--><span class="text-primary">
+                        </span></div>
+
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <h3 class="mb-0">  
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Experience 2</span>
+                                    <input type="text" class="form-control" placeholder="Show Your Experience (eg. SKKU AMBASSADOR)" aria-label="EXperience2" aria-describedby="Experience-title">
+                                    <span class="input-group-text" id="basic-addon1">TimeLine 2</span>
+                                    <input type="text" class="form-control" placeholder="Input TimeLine (eg. February 20xx - Present )" aria-label="Timeline2" aria-describedby="Experience-Timeline">
+                                </div>
+                            </h3>
+                            <div class="subheading mb-3">
+                                <div class="input-group ">
+                                    <span class="input-group-text" id="basic-addon1">Subheading 2</span>
+                                    <input type="text" class="form-control" placeholder="Subtitle (eg. Introduce SKKU around the country)" aria-label="Subheading2" aria-describedby="Experience-Subheading">
+                                </div>
+                            </div>
+                            <p>
+                                <label for="ExplainExperience2" class="form-label">Explain your experience!</label>
+                                <textarea class="form-control" id="ExplainExperience2" rows="3"></textarea>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">
+                            <!--날짜적는곳-->
+                        </span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                            <h3 class="mb-0">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Experience 3</span>
+                                    <input type="text" class="form-control" placeholder="Show Your Experience (eg. SKKU AMBASSADOR)" aria-label="EXperience3" aria-describedby="Experience-title">
+                                    <span class="input-group-text" id="basic-addon1">TimeLine 3</span>
+                                    <input type="text" class="form-control" placeholder="Input TimeLine (eg. February 20xx - Present )" aria-label="Timeline3" aria-describedby="Experience-Timeline">
+                                </div>
+                            </h3>
+                            <div class="subheading mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">Subheading 3</span>
+                                    <input type="text" class="form-control" placeholder="Subtitle (eg. Introduce SKKU around the country)" aria-label="Subheading3" aria-describedby="Experience-Subheading">
+                                </div>
+                            </div>
+                            <p>
+                                <label for="ExplainExperience3" class="form-label">Explain your experience!</label>
+                                <textarea class="form-control" id="ExplainExperience3" rows="3"></textarea>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">
+                            <!--날짜적는곳-->
+                        </span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                            <h3 class="mb-0">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Experience 4</span>
+                                    <input type="text" class="form-control" placeholder="Show Your Experience (eg. SKKU AMBASSADOR)" aria-label="EXperience4" aria-describedby="Experience-title">
+                                    <span class="input-group-text" id="basic-addon1">TimeLine 4</span>
+                                    <input type="text" class="form-control" placeholder="Input TimeLine (eg. February 20xx - Present )" aria-label="Timeline4" aria-describedby="Experience-Timeline">
+                                </div>
+                            </h3>
+                            <div class="subheading mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">Subheading 4</span>
+                                    <input type="text" class="form-control" placeholder="Subtitle (eg. Introduce SKKU around the country)" aria-label="Subheading4" aria-describedby="Experience-Subheading">
+                                </div>
+                            </div>
+                            <p>
+                                <label for="ExplainExperience4" class="form-label">Explain your experience!</label>
+                                <textarea class="form-control" id="ExplainExperience4" rows="3"></textarea>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">
+                            <!--날짜적는곳-->
+                        </span></div>
                     </div>
                 </div>
             </section>
@@ -100,22 +181,52 @@
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <h3 class="mb-0"> 
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Education</span>
+                                    <input type="text" class="form-control" placeholder="Show Your Experience (eg. SKKU AMBASSADOR)" aria-label="EXperience" aria-describedby="Education-title">
+                                    <span class="input-group-text" id="basic-addon1">TimeLine </span>
+                                    <input type="text" class="form-control" placeholder="Input TimeLine (eg. February 20xx - Present )" aria-label="Timeline" aria-describedby="Education-Timeline">
+                                </div>
+                            </h3>
+                            <div class="subheading mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">Subheading </span>
+                                    <input type="text" class="form-control" placeholder="Subtitle (eg. Introduce SKKU around the country)" aria-label="Subheading" aria-describedby="Education-Subheading">
+                                </div>
+                            </div>
+                    
+                            <p>
+                                <label for="ExplainEducation1" class="form-label">Explain your education ! (eg. grade, major, activities ...)</label>
+                                <textarea class="form-control" id="ExplainEducation1" rows="3"></textarea>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><!--날짜--></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <h3 class="mb-0">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Education</span>
+                                    <input type="text" class="form-control" placeholder="Show Your Education (eg. SUNGKYUNKWAN UNIVERSITY )" aria-label="Education" aria-describedby="Education-title">
+                                    <span class="input-group-text" id="basic-addon1">TimeLine</span>
+                                    <input type="text" class="form-control" placeholder="Input TimeLine (eg. February 20xx - Present )" aria-label="Timeline" aria-describedby="Education-timeline">
+                                </div>
+                            </h3>
+                            <div class="subheading mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">Subheading</span>
+                                    <input type="text" class="form-control" placeholder="Subtitle (eg. Major: Software /Undergraduate)" aria-label="Subheading" aria-describedby="Education-Subheading">
+                                </div>
+                            </div>
+                            <p>
+                                <label for="ExplainEducation2"class="form-label">Explain your education !  (eg. grade, major, activities ...)</label>
+                                <textarea class="form-control" id="ExplainEducation2" rows="3"></textarea>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><!--날짜--></span></div>
                     </div>
                 </div>
             </section>
