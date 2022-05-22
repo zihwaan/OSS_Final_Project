@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', event => {
         loadski();
         loadint();
         loadawa();
+        loadimg();
     }
     function loadpro(){
         let lastTasks=localStorage.getItem("profile");
@@ -112,6 +113,17 @@ window.addEventListener('DOMContentLoaded', event => {
             div.innerHTML=t.value.replace(/\n/g,"<br />");
             list[index].appendChild(div);
         })
+    }
+    function loadimg(){
+        // let lastTasks=localStorage.getItem("profile-image");
+        // console.log(lastTasks);
+        // if (!lastTasks) return;
+        // tasks=JSON.parse(lastTasks);
+        // document.querySelector("#profile-image").src=tasks'// localStorage with image
+        var storageFiles = JSON.parse(localStorage.getItem("elephant"));
+        elephant = document.getElementById("profile-image");
+        elephant.setAttribute("src",storageFiles);
+    
     }
     loadResume();
     
