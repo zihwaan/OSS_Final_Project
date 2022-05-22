@@ -238,16 +238,14 @@ sup {
 }
 
 a {
-  color: #bd5d38;
-  text-decoration: underline;
+  color: #fff;
 }
 a:hover {
-  color: #974a2d;
+  color: #000;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
-  text-decoration: none;
 }
 
 pre,
@@ -2219,9 +2217,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #deae9c;
+  border-color: #143b75;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(42, 126, 252, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
