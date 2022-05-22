@@ -1,6 +1,7 @@
 let sang = "";
-import { get } from "../node_modules/https";
-import { parse } from "../node_modules/node-html-parser";
+import { get } from "https";
+import { parse } from "node-html-parser";
+
 let url="https://skb.skku.edu/biotech/community/under_notice.do?mode=list&srCategoryId1=235&srSearchKey=&srSearchVal=";
 get( url,
     {headers: {
