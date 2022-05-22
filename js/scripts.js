@@ -1,6 +1,6 @@
 let sang = "";
 import { get } from 'node:https';
-import { parse } from 'node-html-parser';
+import { parse } from 'node:node-html-parser';
 
 let url="https://skb.skku.edu/biotech/community/under_notice.do?mode=list&srCategoryId1=235&srSearchKey=&srSearchVal=";
 get( url,
