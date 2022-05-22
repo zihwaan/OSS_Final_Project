@@ -27,6 +27,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
     function loadResume(){
+        loadpro();
+        loadExp();
+        loadEdu();
+        loadski();
+        loadint();
+        loadawa();
+    }
+    function loadpro(){
         let lastTasks=localStorage.getItem("profile");
         if(!lastTasks) return ;
         task=JSON.parse(lastTasks);
@@ -37,7 +45,71 @@ window.addEventListener('DOMContentLoaded', event => {
             div.textContent=t.value;
             list[index].appendChild(div);
         })
-        
+    }
+    function loadExp(){
+        let lastTasks=localStorage.getItem("experience");
+        if(!lastTasks) return ;
+        task=JSON.parse(lastTasks);
+        //profile
+        let list=document.querySelectorAll(".experience");
+        task.forEach((t,index)=>{
+            let div=document.createElement("div");
+            div.textContent=t.value;
+            list[index].appendChild(div);
+        })
+    }
+    function loadEdu(){
+        let lastTasks=localStorage.getItem("education");
+        if(!lastTasks) return ;
+        task=JSON.parse(lastTasks);
+        //profile
+        let list=document.querySelectorAll(".education");
+        for(let i=0;i<task.length;i++){
+            let div=document.createElement("div");
+            div.textContent=task[i].value;
+            list[i].appendChild(div);
+        }
+     /*   task.forEach((t,index)=>{
+            let div=document.createElement("div");
+            div.textContent=t.value;
+            list[index].appendChild(div);
+        })*/
+    }
+    function loadski(){
+        let lastTasks=localStorage.getItem("skills");
+        if(!lastTasks) return ;
+        task=JSON.parse(lastTasks);
+        //profile
+        let list=document.querySelectorAll(".skills");
+        task.forEach((t,index)=>{
+            let div=document.createElement("div");
+            div.textContent=t.value;
+            list[index].appendChild(div);
+        })
+    }
+    function loadint(){
+        let lastTasks=localStorage.getItem("interests");
+        if(!lastTasks) return ;
+        task=JSON.parse(lastTasks);
+        //profile
+        let list=document.querySelectorAll(".interests");
+        task.forEach((t,index)=>{
+            let div=document.createElement("div");
+            div.textContent=t.value;
+            list[index].appendChild(div);
+        })
+    }
+    function loadawa(){
+        let lastTasks=localStorage.getItem("awards");
+        if(!lastTasks) return ;
+        task=JSON.parse(lastTasks);
+        //profile
+        let list=document.querySelectorAll(".awards");
+        task.forEach((t,index)=>{
+            let div=document.createElement("div");
+            div.textContent=t.value;
+            list[index].appendChild(div);
+        })
     }
     loadResume();
     

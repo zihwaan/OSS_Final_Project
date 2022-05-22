@@ -31,31 +31,76 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
     // Profile
-    function saveResume(node){
-        task={
-            class:node.class,
-            value:node.value
-        }
-        localStorage.setItem("task",JSON.stringify(tasks));
+    tasks_pro=[];
+    tasks_exp=[];
+    tasks_edu=[];
+    tasks_ski=[];
+    tasks_int=[];
+    tasks_awa=[];
+    function saveResume(name,tasks){
+        console.log(tasks);
+        console.log(name);
+        localStorage.setItem(name,JSON.stringify(tasks));
+        console.log("Done save Resume");
 
 
     }
     let finish_button=document.querySelector("#finishbt");
     finish_button.addEventListener("click",()=>{
-        let profile_input=document.querySelectorAll("#FirstName, #LastName, #Address, #Introduce").forEach(saveResume);
-        let experience_input=document.querySelectorAll(".experience, .timeline, .subhead .experienceexp").forEach(saveResume);
-        let education_input=document.querySelectorAll(".education, .edutimeline, .edusubhead, .explainedu").forEach(saveResume);
-        let skills_input=document.querySelectorAll(".skills, .workflow").forEach(saveResume);
-        let interests_input=document.querySelectorAll(".interests").forEach(saveResume);
-        let awards_input=document.querySelectorAll(".awards").forEach(saveResume);
         
-        console.log(profile_input[0].value,profile_input[1].value,profile_input[2].value,profile_input[3].value);
-        console.log(experience_input[0].value,experience_input[1].value,experience_input[2].value,experience_input[3].value);
+        let profile_input=document.querySelectorAll("#FirstName, #LastName, #Address, #Introduce").forEach(t=>{
+            task={
+                value:t.value
+            }
+            tasks_pro.push(task);
+            saveResume("profile",tasks_pro);
+        });
+        let experience_input=document.querySelectorAll(".experience, .subhead, .explainexp, .timeline").forEach(t=>{
+            task={
+                value:t.value
+            }
+            tasks_exp.push(task);
+            saveResume("experience",tasks_exp)
+        });
+        let education_input=document.querySelectorAll(".education, .edusubhead, .explainedu, .edutimeline").forEach(t=>{
+            task={
+                value:t.value
+            }
+            tasks_edu.push(task);
+            saveResume("education",tasks_edu);
+        });
+        let skills_input=document.querySelectorAll(".skills, .workflow").forEach(t=>{
+            task={
+                value:t.value
+            }
+            tasks_ski.push(task);
+            saveResume("skills",tasks_ski);
+        });
+        let interests_input=document.querySelectorAll(".interests").forEach(t=>{
+            task={
+                value:t.value
+            }
+            tasks_int.push(task);
+            saveResume("interests",tasks_int);
+        });
+        let awards_input=document.querySelectorAll(".awards").forEach(t=>{
+            task={
+                value:t.value
+            }
+            tasks_awa.push(task);
+            saveResume("awards",tasks_awa);
+        });
+    
+        
+        
+     //   console.log(profile_input[0].value,profile_input[1].value,profile_input[2].value,profile_input[3].value);
+     //   console.log(experience_input[0].value,experience_input[1].value,experience_input[2].value,experience_input[3].value);
         //let education_input=document.querySelectorAll("");
         //let skills_input=document.querySelectorAll("");
         //let interests_input=document.querySelectorAll("");
         //let awards_input=document.querySelectorAll("");
     })
-
+    
+   
     
 });
