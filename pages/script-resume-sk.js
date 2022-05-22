@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', event => {
         task.forEach((t,index)=>{
             let div=document.createElement("div");
             div.innerHTML=t.value.replace(/\n/g,"<br />");
-         //   console.log(t.value,div.innterHTML);
+            console.log(t.value,div.textContent);
             list[index].appendChild(div);
         })
     }
