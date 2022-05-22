@@ -42,7 +42,8 @@ window.addEventListener('DOMContentLoaded', event => {
         let list=document.querySelectorAll(".profile");
         task.forEach((t,index)=>{
             let div=document.createElement("div");
-            div.textContent=t.value;
+            div.innerHTML=t.value.replace(/\n/g,"<br />");
+            console.log(t.value,div.textContent);
             list[index].appendChild(div);
         })
     }
@@ -54,7 +55,7 @@ window.addEventListener('DOMContentLoaded', event => {
         let list=document.querySelectorAll(".experience");
         task.forEach((t,index)=>{
             let div=document.createElement("div");
-            div.textContent=t.value;
+            div.innerHTML=t.value.replace(/\n/g,"<br />");
             list[index].appendChild(div);
         })
     }
@@ -64,11 +65,11 @@ window.addEventListener('DOMContentLoaded', event => {
         task=JSON.parse(lastTasks);
         //profile
         let list=document.querySelectorAll(".education");
-        for(let i=0;i<task.length;i++){
+        task.forEach((t,index)=>{
             let div=document.createElement("div");
-            div.textContent=task[i].value;
-            list[i].appendChild(div);
-        }
+            div.innerHTML=t.value.replace(/\n/g,"<br />");
+            list[index].appendChild(div);
+        })
      /*   task.forEach((t,index)=>{
             let div=document.createElement("div");
             div.textContent=t.value;
@@ -83,7 +84,7 @@ window.addEventListener('DOMContentLoaded', event => {
         let list=document.querySelectorAll(".skills");
         task.forEach((t,index)=>{
             let div=document.createElement("div");
-            div.textContent=t.value;
+            div.innerHTML=t.value.replace(/\n/g,"<br />");
             list[index].appendChild(div);
         })
     }
@@ -95,7 +96,7 @@ window.addEventListener('DOMContentLoaded', event => {
         let list=document.querySelectorAll(".interests");
         task.forEach((t,index)=>{
             let div=document.createElement("div");
-            div.textContent=t.value;
+            div.innerHTML=t.value.replace(/\n/g,"<br />");
             list[index].appendChild(div);
         })
     }
@@ -107,7 +108,7 @@ window.addEventListener('DOMContentLoaded', event => {
         let list=document.querySelectorAll(".awards");
         task.forEach((t,index)=>{
             let div=document.createElement("div");
-            div.textContent=t.value;
+            div.innerHTML=t.value.replace(/\n/g,"<br />");
             list[index].appendChild(div);
         })
     }
