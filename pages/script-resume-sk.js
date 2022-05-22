@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
     function loadpro(){
         let lastTasks=localStorage.getItem("profile");
-        if(!lastTasks) return ;
+        if(!lastTasks) return;
         task=JSON.parse(lastTasks);
         //profile
         let list=document.querySelectorAll(".profile");
@@ -105,6 +105,7 @@ window.addEventListener('DOMContentLoaded', event => {
         if(!lastTasks) return ;
         task=JSON.parse(lastTasks);
         //profile
+        //갯수 맞춰서 icon달아줄까
         let list=document.querySelectorAll(".awards");
         task.forEach((t,index)=>{
             let div=document.createElement("div");
