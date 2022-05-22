@@ -1,16 +1,6 @@
-/*!
-* Start Bootstrap - Heroic Features v5.0.5 (https://startbootstrap.com/template/heroic-features)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-heroic-features/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
-
 let sang = "";
-
-import { get } from "../node_modules/install/install";
-import { parse } from "../node_modules/node-html-parser/esm/index";
-
+import { get } from "https";
+import { parse } from "node-html-parser";
 let url="https://skb.skku.edu/biotech/community/under_notice.do?mode=list&srCategoryId1=235&srSearchKey=&srSearchVal=";
 get( url,
     {headers: {
@@ -20,7 +10,7 @@ get( url,
 },
 (res) =>{
     let data = "";
-    res.on("data", (d) =>{ 
+    res.on("data", (d) =>{
         data += d;
     });
     res.on("end", () =>{
